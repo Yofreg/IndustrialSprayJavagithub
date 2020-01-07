@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BooheeRuler">
+        <attr name="minScale" format="integer" />
+        <attr name="maxScale" format="integer" />
+        <attr name="smallScaleLength" format="dimension" />
+        <attr name="smallScaleWidth" format="dimension" />
+        <attr name="bigScaleLength" format="dimension" />
+        <attr name="bigScaleWidth" format="dimension" />
+        <attr name="cursorHeight" format="dimension" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="textMarginHead" format="dimension" />
+        <attr name="numberTextSize" format="dimension" />
+        <attr name="scaleInterval" format="dimension" />
+        <attr name="numberTextColor" format="color" />
+        <attr name="scaleColor" format="color" />
+        <attr name="cursorDrawable" format="dimension" />
+        <attr name="currentScale" format="float" />
+        <attr name="paddingStartAndEnd" format="dimension" />
+        <attr name="count" format="integer" />
+        <attr name="rulerStyle" format="enum">
+            <enum name="BOTTOM_HEAD" value="2" />
+            <enum name="RIGHT_HEAD" value="4" />
+        </attr>
+        <attr name="rulerBackGround" format="reference|color" />
+        <attr name="canEdgeEffect" format="boolean" />
+        <attr name="edgeColor" format="color" />
+        <attr name="factor" format="float" />
+    </declare-styleable>
+    <declare-styleable name="RotateTextView180">
+        <attr name="degree" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="verticaltextview">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textSize" format="reference|dimension" />
+        <attr name="direction" >
+            <enum name="uptodown" value="0" />
+            <enum name="downtoup" value="1" />
+            <enum name="totop" value="2" />
+            <enum name="tobootom" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

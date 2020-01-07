@@ -1,0 +1,72 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+//apply plugin:'com.github.dcendents.android-maven'
+//apply plugin:'com.jfrog.bintray'
+
+publish { // 新增`
+
+    userOrg = 'xianmomo201314'// 注册bintray时的username`
+
+    groupId = 'com.goockr.aarorjardemo'// 项目包名`
+
+    artifactId = 'pmj'// 项目名`
+
+    publishVersion = '1.0.0'// 发布版本号`
+
+    desc = 'demotest'// 项目描述，可选项`
+
+//    website = '[https://github.com/huangweicai/infinitus_demo_lib'](https://github.com/huangweicai/infinitus_demo_lib')` `// 项目站点，可选项`
+
+    }
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    /*signingConfigs {
+        goockr {
+            keyAlias 'goockrAlias'
+            keyPassword 'goockr666'
+            storeFile file('C:/Users/xuwuxian/Desktop/GK185-喷码打印机/Android/antilost.jks')
+            storePassword 'goockr666'
+        }
+    }*/
+
+
+    defaultConfig {
+        //applicationId "com.goockr.aarorjardemo"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//a91a2974f1c6fba8184a522bee31e23b5e2e5eeb
+    }
+
+    /*buildTypes {
+        release {
+            minifyEnabled false //true表示要混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.goockr
+        }
+        debug {
+            signingConfig signingConfigs.goockr
+        }
+    }*/
+   /* aaptOptions {
+        noCompress "fon"
+    }*/
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+//    implementation project(path: ':pmj_b')
+}

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.goockr.industrialsprayjava.view.Horizon
+        android:id="@+id/hroizon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@id/homeLlControl"
+        android:background="#fff"
+        android:fadeScrollbars="false"
+        app:layout_constraintBottom_toTopOf="@+id/tv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.goockr.industrialsprayjava.view.Scroll
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/MyRe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="2000dp">
+
+                <com.goockr.industrialsprayjava.graphics.InnerRulers.BooheeRuler
+                    android:id="@+id/br_bottom_head"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    app:bigScaleLength="20dp"
+                    app:bigScaleWidth="1.5dp"
+                    app:canEdgeEffect="true"
+                    app:count="10"
+                    app:currentScale="20"
+                    app:cursorHeight="45dp"
+                    app:cursorWidth="4dp"
+                    app:factor="0.1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:maxScale="400"
+                    app:minScale="0"
+                    app:numberTextSize="12sp"
+                    app:paddingStartAndEnd="10dp"
+                    app:rulerBackGround="@color/translate"
+                    app:rulerStyle="BOTTOM_HEAD"
+                    app:scaleColor="@color/black"
+                    app:scaleInterval="6dp"
+                    app:smallScaleLength="10dp"
+                    app:smallScaleWidth="1dp"
+                    app:textMarginHead="12dp" />
+                <!--尺子-->
+                <com.goockr.industrialsprayjava.graphics.InnerRulers.BooheeRuler
+                    android:id="@+id/br_right_head"
+                    android:layout_width="28dp"
+                    android:layout_height="800dp"
+                    app:bigScaleLength="20dp"
+                    app:bigScaleWidth="1.5dp"
+                    app:count="10"
+                    app:currentScale="20"
+                    app:cursorHeight="4dp"
+                    app:cursorWidth="45dp"
+                    app:factor="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:maxScale="200"
+                    app:minScale="0"
+                    app:numberTextSize="12sp"
+                    app:paddingStartAndEnd="10dp"
+                    app:rulerBackGround="@color/translate"
+                    app:rulerStyle="RIGHT_HEAD"
+                    app:scaleColor="@color/black"
+                    app:scaleInterval="6dp"
+                    app:smallScaleLength="10dp"
+                    app:smallScaleWidth="1dp"
+                    app:textMarginHead="5dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </com.goockr.industrialsprayjava.view.Scroll>
+
+
+    </com.goockr.industrialsprayjava.view.Horizon>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"
+        android:singleLine="true"
+        android:text="@string/NowMsgName"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tvbvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:text="图片大小: 0/10000"
+        app:layout_constraintStart_toStartOf="@+id/tvbvv"
+        app:layout_constraintTop_toBottomOf="@+id/text1"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:lineSpacingExtra="5dp"
+        android:text="已打印: 0"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/tvbvv"
+        app:layout_constraintTop_toBottomOf="@+id/tvbvv" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:lineSpacingExtra="5dp"
+        android:text="闪喷状态: 开启"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:lineSpacingExtra="5dp"
+        android:text="开始时间: 未开始打印"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/text3"
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+    <TextView
+        android:id="@+id/DpiTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:lineSpacingExtra="5dp"
+        android:text="DPI: 600*300"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text1"
+        app:layout_constraintStart_toEndOf="@+id/text1"
+        app:layout_constraintTop_toTopOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/Print1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="喷头1：100% "
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvbvv"
+        app:layout_constraintStart_toStartOf="@+id/DpiTv"
+        app:layout_constraintTop_toTopOf="@+id/tvbvv" />
+
+    <TextView
+        android:id="@+id/Print2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="喷头2：100%"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text2"
+        app:layout_constraintStart_toStartOf="@+id/Print1"
+        app:layout_constraintTop_toTopOf="@+id/text2" />
+
+    <TextView
+        android:id="@+id/Print3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="喷头3：100% "
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text3"
+        app:layout_constraintStart_toStartOf="@+id/Print2"
+        app:layout_constraintTop_toTopOf="@+id/text3" />
+
+    <TextView
+        android:id="@+id/Print4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="喷头4：100% "
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text4"
+        app:layout_constraintStart_toStartOf="@+id/Print3"
+        app:layout_constraintTop_toTopOf="@+id/text4" />
+
+
+    <TextView
+        android:id="@+id/Print1Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/on"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print1"
+        app:layout_constraintStart_toEndOf="@+id/Print1"
+        app:layout_constraintTop_toTopOf="@+id/Print1" />
+
+    <TextView
+        android:id="@+id/Print2Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/on"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print2"
+        app:layout_constraintStart_toStartOf="@+id/Print1Right"
+        app:layout_constraintTop_toTopOf="@+id/Print2" />
+
+    <TextView
+        android:id="@+id/Print3Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/on"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print3"
+        app:layout_constraintStart_toStartOf="@+id/Print2Right"
+        app:layout_constraintTop_toTopOf="@+id/Print3" />
+
+    <TextView
+        android:id="@+id/Print4Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/on"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print4"
+        app:layout_constraintStart_toStartOf="@+id/Print3Right"
+        app:layout_constraintTop_toTopOf="@+id/Print4" />
+
+
+    <TextView
+        android:id="@+id/Print5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:lineSpacingExtra="5dp"
+        android:text="喷头5：100%"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print1"
+        app:layout_constraintStart_toEndOf="@+id/Print1Right"
+        app:layout_constraintTop_toTopOf="@+id/Print1" />
+
+    <TextView
+        android:id="@+id/Print6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="喷头6：100%"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print2"
+        app:layout_constraintStart_toStartOf="@+id/Print5"
+        app:layout_constraintTop_toTopOf="@+id/Print2" />
+
+    <TextView
+        android:id="@+id/Print7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="喷头7：100%"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print3"
+        app:layout_constraintStart_toStartOf="@+id/Print6"
+        app:layout_constraintTop_toTopOf="@+id/Print3" />
+
+    <TextView
+        android:id="@+id/Print8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="喷头8：100%"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print4"
+        app:layout_constraintStart_toStartOf="@+id/Print7"
+        app:layout_constraintTop_toTopOf="@+id/Print4" />
+
+    <TextView
+        android:id="@+id/Print5Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/on"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print5"
+        app:layout_constraintStart_toEndOf="@+id/Print5"
+        app:layout_constraintTop_toTopOf="@+id/Print5" />
+
+    <TextView
+        android:id="@+id/Print6Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/on"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print6"
+        app:layout_constraintStart_toStartOf="@+id/Print5Right"
+        app:layout_constraintTop_toTopOf="@+id/Print6" />
+
+    <TextView
+        android:id="@+id/Print7Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/on"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print7"
+        app:layout_constraintStart_toStartOf="@+id/Print6Right"
+        app:layout_constraintTop_toTopOf="@+id/Print7" />
+
+    <TextView
+        android:id="@+id/Print8Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/on"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Print8"
+        app:layout_constraintStart_toStartOf="@+id/Print7Right"
+        app:layout_constraintTop_toTopOf="@+id/Print8" />
+
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/RealTimeRefresh"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="2"
+        android:background="@drawable/btn_check_bg"
+        android:text="@string/Reconnection"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/ibStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+    <ImageButton
+        android:id="@+id/ibStart"
+        android:layout_width="130dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="3"
+        android:background="@drawable/btn_control_bg"
+        android:src="@mipmap/start"
+        android:text="开始"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="频率:" android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/DpiTv"
+        app:layout_constraintStart_toEndOf="@+id/DpiTv"
+        app:layout_constraintTop_toTopOf="@+id/DpiTv" app:layout_constraintVertical_bias="0.857"/>
+
+    <TextView
+        android:id="@+id/tv_pl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp" android:layout_marginTop="8dp"
+        android:text="0/0/0"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_p"
+        app:layout_constraintStart_toEndOf="@+id/tv_p" app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <TextView
+        android:id="@+id/tv_daying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp" android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/text2"
+        app:layout_constraintStart_toEndOf="@+id/text2"
+        app:layout_constraintTop_toTopOf="@+id/text2" app:layout_constraintVertical_bias="1.0"/>
+
+    <TextView
+        android:id="@+id/tv_huancun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="1000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_daying"
+        app:layout_constraintStart_toEndOf="@+id/tv_daying"
+        app:layout_constraintTop_toTopOf="@+id/tv_daying" app:layout_constraintVertical_bias="1.0"/>
+
+</android.support.constraint.ConstraintLayout>

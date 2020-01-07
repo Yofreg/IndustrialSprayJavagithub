@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.machine.ChangeLanguageFragment">
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/textStyle1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/InterfaceLanguage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32999998" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/ChangeLanguageSpinner"
+        android:layout_width="150dp"
+        android:layout_marginStart="16dp"
+        app:ms_dropdown_max_height="250dp"
+        android:layout_height="35dp"
+        app:ms_background_color="@color/spinnerback"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/tv1"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+    <TextView
+        android:id="@+id/tvvv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/ChangeLanguageCancel"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="32dp"
+        android:text="@string/Cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/tvvv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvvv" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/ChangeLanguageSure"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/determine"
+        app:layout_constraintBottom_toBottomOf="@+id/ChangeLanguageCancel"
+        app:layout_constraintStart_toEndOf="@+id/ChangeLanguageCancel"
+        app:layout_constraintTop_toTopOf="@+id/ChangeLanguageCancel"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/InsertText"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Textcontent"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="600dp"
+        android:layout_height="30dp"
+        android:text="6923450657607"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/tv_border1"
+        android:paddingLeft="5dp"
+        android:maxLength="20"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnCancelText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="@string/Cancel"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv4" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnSureText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="@string/determine"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancelText"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelText"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelText"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</android.support.constraint.ConstraintLayout>

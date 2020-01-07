@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/MachineFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeLlControl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/homeLlControl"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mainGrayBg"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/SaveSetting"
+            style="@style/btnStyleWrap"
+            android:text="@string/SaveSetting" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/DateCode"
+            style="@style/btnStyleWrap"
+            android:text="@string/DayCode" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/TimeCode"
+            style="@style/btnStyleWrap"
+            android:text="@string/TimeCode" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/CommSetting"
+            style="@style/btnStyleWrap"
+            android:visibility="gone"
+            android:text="通讯\n设置" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ProductCount"
+            style="@style/btnStyleWrap"
+            android:text="@string/ProduceCount" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ConsumableInfo"
+            style="@style/btnStyleWrap"
+            android:text="@string/InkBoxInfo" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ChangeLanguage"
+            style="@style/btnStyleWrap"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/SettingLanguage" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ChangeTime"
+            style="@style/btnStyleWrap"
+            android:text="@string/SettingTime" />
+
+        <ImageButton
+            android:id="@+id/ibStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:src="@mipmap/go" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeLlControl2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mainGrayBg"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/ibStart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/away" />
+
+        <!--<Button-->
+            <!--android:id="@+id/ChangeLanguage"-->
+            <!--style="@style/btnStyleWrap"-->
+            <!--android:text="更改\n语言" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/ChangeTime"-->
+            <!--style="@style/btnStyleWrap"-->
+            <!--android:text="更改\n时间" />-->
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ScreenCalibration"
+            style="@style/btnStyleWrap"
+            android:visibility="gone"
+            android:text="屏幕\n校准" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

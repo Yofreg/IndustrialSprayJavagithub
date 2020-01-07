@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.machine.DateCodeFragment">
+
+    <TextView
+        android:id="@+id/tvvv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/MachineCancel"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="32dp"
+        android:text="@string/Cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/tvvv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvvv" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/MachineSure"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/Save"
+        app:layout_constraintBottom_toBottomOf="@+id/MachineCancel"
+        app:layout_constraintStart_toEndOf="@+id/MachineCancel"
+        app:layout_constraintTop_toTopOf="@+id/MachineCancel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/MachineDel"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/Del"
+        app:layout_constraintBottom_toBottomOf="@+id/MachineCancel"
+        app:layout_constraintStart_toEndOf="@+id/MachineSure"
+        app:layout_constraintTop_toTopOf="@+id/MachineCancel" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/MachineAdd"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/Add"
+        app:layout_constraintBottom_toBottomOf="@+id/MachineDel"
+        app:layout_constraintStart_toEndOf="@+id/MachineDel"
+        app:layout_constraintTop_toTopOf="@+id/MachineDel" />
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/MachineTextStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/Day1Bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Day1Bt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Day1Bt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:text="DD"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tvvv"
+        app:layout_constraintStart_toEndOf="@+id/tv1" />
+
+
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/MachineTextStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/SecondVariable"
+        app:layout_constraintBottom_toBottomOf="@+id/SecondBt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SecondBt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/SecondBt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginBottom="8dp"
+        android:textAllCaps="false"
+        android:layout_marginStart="16dp"
+        android:text="ss"
+        app:layout_constraintBottom_toTopOf="@+id/Day1Bt"
+        app:layout_constraintStart_toEndOf="@+id/tv2" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        style="@style/MachineTextStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/MinuteVariable"
+        app:layout_constraintBottom_toBottomOf="@+id/MinBt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MinBt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/MinBt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:textAllCaps="false"
+        android:text="mm"
+        app:layout_constraintBottom_toTopOf="@+id/SecondBt"
+        app:layout_constraintStart_toEndOf="@+id/tv3" />
+
+
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/MachineTextStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/HourVariable"
+        app:layout_constraintBottom_toBottomOf="@+id/TimeBt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TimeBt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/TimeBt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:text="HH"
+        app:layout_constraintBottom_toTopOf="@+id/MinBt"
+        app:layout_constraintStart_toEndOf="@+id/tv4" />
+
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/MachineTextStyle"
+        android:layout_marginStart="32dp"
+        android:text="@string/Delimiter"
+        app:layout_constraintBottom_toBottomOf="@+id/TimeBt"
+        app:layout_constraintStart_toEndOf="@+id/TimeBt"
+        app:layout_constraintTop_toTopOf="@+id/TimeBt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Split1"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="@+id/TimeBt"
+        app:layout_constraintStart_toEndOf="@+id/tv5"
+        app:layout_constraintTop_toTopOf="@+id/TimeBt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Split2"
+        style="@style/btnStyleWrap1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/MinBt"
+        app:layout_constraintEnd_toEndOf="@+id/Split1"
+        app:layout_constraintStart_toStartOf="@+id/Split1"
+        app:layout_constraintTop_toTopOf="@+id/MinBt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Split3"
+        style="@style/btnStyleWrap1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="@+id/SecondBt"
+        app:layout_constraintEnd_toEndOf="@+id/Split2"
+        app:layout_constraintStart_toStartOf="@+id/Split2"
+        app:layout_constraintTop_toTopOf="@+id/SecondBt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Split4"
+        style="@style/btnStyleWrap1"
+        android:text="@string/other"
+        app:layout_constraintBottom_toBottomOf="@+id/Day1Bt"
+        app:layout_constraintEnd_toEndOf="@+id/Split3"
+        app:layout_constraintStart_toStartOf="@+id/Split3"
+        app:layout_constraintTop_toTopOf="@+id/Day1Bt" />
+
+
+    <TextView
+        android:id="@+id/tv6"
+        style="@style/MachineTextStyle"
+        android:layout_marginStart="32dp"
+        android:text="@string/TimeFormat"
+        app:layout_constraintBottom_toBottomOf="@+id/TimeStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TimeStyle" />
+
+    <TextView
+        android:id="@+id/TimeStyle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/TimeBt"
+        app:layout_constraintStart_toEndOf="@+id/tv6" />
+
+    <ImageButton
+        android:id="@+id/DelTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:padding="7dp"
+        android:src="@mipmap/del_date"
+        android:visibility="invisible"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="@+id/TimeStyle"
+        app:layout_constraintEnd_toEndOf="@+id/TimeStyle"
+        app:layout_constraintTop_toTopOf="@+id/TimeStyle" />
+
+    <ListView
+        android:id="@+id/TimeStyleListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:background="@drawable/tv_border1"
+        app:layout_constraintBottom_toTopOf="@+id/TimeStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

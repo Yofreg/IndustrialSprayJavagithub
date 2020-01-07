@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.printManager.Print1Fragment">
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/textStyle1"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Print5"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/textStyle1"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/TriggerSelection"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/TriggerPrintSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintStart_toEndOf="@+id/tv2"
+        app:layout_constraintTop_toTopOf="@+id/tv2"
+        app:ms_background_color="@color/spinnerback" />
+
+    <TextView
+        android:id="@+id/tv3"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/PrintDelay"
+        app:layout_constraintStart_toStartOf="@+id/tv2"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <EditText
+        android:id="@+id/PrintDelayed"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="number"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:text="1"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toTopOf="@+id/tv3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/range"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/PrintDelayed"
+        app:layout_constraintStart_toEndOf="@+id/PrintDelayed"
+        app:layout_constraintTop_toTopOf="@+id/PrintDelayed" />
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/NozzleSelection"
+        app:layout_constraintStart_toStartOf="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/MuzzleSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/tv5"
+        app:layout_constraintStart_toEndOf="@+id/tv5"
+        app:layout_constraintTop_toTopOf="@+id/tv5"
+        app:ms_background_color="@color/spinnerback" />
+
+    <TextView
+        android:id="@+id/tv6"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/FreeInterval"
+        app:layout_constraintStart_toStartOf="@+id/tv5"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/MuzzleInterval"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toEndOf="@+id/tv6"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp" />
+
+    <TextView
+        android:id="@+id/tv7"
+        style="@style/textStyle1"
+        android:layout_marginStart="32dp"
+        android:text="@string/FreeColumns"
+        app:layout_constraintStart_toEndOf="@+id/MuzzleInterval"
+        app:layout_constraintTop_toTopOf="@+id/tv6" />
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/MuzzleRow"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv7"
+        app:layout_constraintStart_toEndOf="@+id/tv7"
+        app:layout_constraintTop_toTopOf="@+id/tv7"
+        app:ms_background_color="@color/spinnerback" />
+
+    <TextView
+        android:id="@+id/tv8"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/FlipMode"
+        app:layout_constraintStart_toStartOf="@+id/tv6"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/ReservePrintSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv8"
+        app:layout_constraintStart_toEndOf="@+id/tv8"
+        app:layout_constraintTop_toTopOf="@+id/tv8"
+        app:ms_background_color="@color/spinnerback" />
+
+    <TextView
+        android:id="@+id/tv9"
+        style="@style/textStyle1"
+        android:layout_marginStart="32dp"
+        android:text="@string/ReverseMode"
+        app:layout_constraintStart_toEndOf="@+id/ReservePrintSpinner"
+        app:layout_constraintTop_toTopOf="@+id/tv8" />
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/UpsidePrint"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv9"
+        app:layout_constraintStart_toEndOf="@+id/tv9"
+        app:layout_constraintTop_toTopOf="@+id/tv9"
+        app:ms_background_color="@color/spinnerback"/>
+
+    <TextView
+        android:id="@+id/tv10"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/SprinklerLevel"
+        app:layout_constraintStart_toStartOf="@+id/tv8"
+        app:layout_constraintTop_toBottomOf="@+id/tv8" />
+
+    <RadioGroup
+        android:id="@+id/muzzleLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/tv10"
+        app:layout_constraintStart_toEndOf="@+id/tv10"
+        app:layout_constraintTop_toTopOf="@+id/tv10">
+
+        <RadioButton
+            android:id="@+id/HighLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/HighLevel" />
+
+        <RadioButton
+            android:id="@+id/LowLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/LowLevel" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvvv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/PrintCancel1"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="32dp"
+        android:text="@string/Cancel"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/tvvv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvvv" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/PrintSure1"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/determine"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/PrintCancel1"
+        app:layout_constraintStart_toEndOf="@+id/PrintCancel1"
+        app:layout_constraintTop_toTopOf="@+id/PrintCancel1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv20"
+        style="@style/textStyle1"
+        android:layout_marginTop="20dp" android:text="电压"
+        app:layout_constraintStart_toStartOf="@+id/tv10"
+        app:layout_constraintTop_toBottomOf="@+id/tv10"/>
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/ReservePrintSpinner20"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+
+        android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv20"
+        app:layout_constraintStart_toEndOf="@+id/tv20"
+        app:layout_constraintTop_toTopOf="@+id/tv20"
+        app:layout_constraintVertical_bias="0.444"
+        app:ms_background_color="@color/spinnerback">
+
+    </com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <TextView
+        android:id="@+id/tv30"
+        style="@style/textStyle1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:text="脉宽"
+        app:layout_constraintBottom_toBottomOf="@+id/ReservePrintSpinner20"
+        app:layout_constraintStart_toEndOf="@+id/ReservePrintSpinner20"
+        app:layout_constraintTop_toTopOf="@+id/ReservePrintSpinner20"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <EditText
+        android:id="@+id/PrintDelayed30"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="10dp"
+        android:singleLine="true" android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv30"
+        app:layout_constraintStart_toEndOf="@+id/tv30"
+        app:layout_constraintTop_toTopOf="@+id/tv30" app:layout_constraintVertical_bias="1.0">
+
+    </EditText>
+
+</android.support.constraint.ConstraintLayout>

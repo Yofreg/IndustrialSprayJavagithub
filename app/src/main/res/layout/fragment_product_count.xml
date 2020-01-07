@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.machine.ProductCountFragment">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/textStyle1"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/ProductInspections"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DetectionCount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/tv_border1"
+        android:padding="5dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/ProductPrints"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/PrintCount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/tv_border1"
+        android:padding="5dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toTopOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv3"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/LastResetTime"
+        app:layout_constraintStart_toStartOf="@+id/tv2"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/ResetTime"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/tv_border1"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toTopOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/textStyle1"
+        android:layout_marginTop="32dp"
+        android:text="@string/TotalProduct"
+        app:layout_constraintStart_toStartOf="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <TextView
+        android:id="@+id/AllDetectionCount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/tv_border1"
+        android:padding="5dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tv4"
+        app:layout_constraintStart_toEndOf="@+id/tv6"
+        app:layout_constraintTop_toTopOf="@+id/tv4" />
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/TotalProductPrints"
+        app:layout_constraintStart_toStartOf="@+id/tv4"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <TextView
+        android:id="@+id/AllPrintCount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/tv_border1"
+        android:padding="5dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tv5"
+        app:layout_constraintStart_toEndOf="@+id/tv6"
+        app:layout_constraintTop_toTopOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/tv6"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/LastResetTime"
+        app:layout_constraintStart_toStartOf="@+id/tv5"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <TextView
+        android:id="@+id/AllResetTime"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/tv_border1"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toEndOf="@+id/tv6"
+        app:layout_constraintTop_toTopOf="@+id/tv6" />
+
+    <TextView
+        android:id="@+id/tvvv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/ProductCountCancel"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="32dp"
+        android:text="@string/Cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/tvvv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvvv" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/ProductCountSure"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/determine"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/ProductCountCancel"
+        app:layout_constraintStart_toEndOf="@+id/ProductCountCancel"
+        app:layout_constraintTop_toTopOf="@+id/ProductCountCancel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/ProductCountReset"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/ProductCountSure"
+        app:layout_constraintStart_toEndOf="@+id/ProductCountSure"
+        app:layout_constraintTop_toTopOf="@+id/ProductCountSure"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/ProductCountAllReset"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/AllReset"
+        app:layout_constraintBottom_toBottomOf="@+id/ProductCountReset"
+        app:layout_constraintStart_toEndOf="@+id/ProductCountReset"
+        app:layout_constraintTop_toTopOf="@+id/ProductCountReset"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

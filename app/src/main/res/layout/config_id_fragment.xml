@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="600dp"
+        android:padding="10dp"
+        android:background="@drawable/et_mima_bg"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:text="本机机身号：       D2C0000001"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:text="机器系统时间：    2018/01/23"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:text="本机ID状态：        G001"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="50dp"
+        android:layout_width="600dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/DynamicCode"
+            android:textSize="20sp"
+            android:textColor="#333333"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et_config"
+            android:textSize="28sp"
+            android:padding="2dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="numberPassword"
+            android:background="@drawable/et_mima_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/mainGrayBg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="80dp">
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btn_quxiao"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:text="@string/Cancel"
+            android:background="@drawable/btn_control_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btn_queding"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/determine"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_control_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

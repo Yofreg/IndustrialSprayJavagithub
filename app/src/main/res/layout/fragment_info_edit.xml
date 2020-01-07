@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BigConss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.goockr.industrialsprayjava.view.Horizon
+        android:id="@+id/hroizon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/homeLlControl"
+        android:background="#fff"
+        android:fadeScrollbars="false"
+        app:layout_constraintBottom_toTopOf="@+id/homeLlControl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.goockr.industrialsprayjava.view.Scroll
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/MyRe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="2000dp">
+
+                <com.goockr.industrialsprayjava.graphics.InnerRulers.BooheeRuler
+                    android:id="@+id/br_bottom_head"
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    app:bigScaleLength="20dp"
+                    app:bigScaleWidth="1.5dp"
+                    app:canEdgeEffect="true"
+                    app:count="10"
+                    app:currentScale="20"
+                    app:cursorHeight="45dp"
+                    app:cursorWidth="4dp"
+                    app:factor="0.1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:maxScale="200"
+                    app:minScale="0"
+                    app:numberTextSize="12sp"
+                    app:paddingStartAndEnd="10dp"
+                    app:rulerBackGround="@color/translate"
+                    app:rulerStyle="BOTTOM_HEAD"
+                    app:scaleColor="@color/black"
+                    app:scaleInterval="6dp"
+                    app:smallScaleLength="10dp"
+                    app:smallScaleWidth="1dp"
+                    app:textMarginHead="12dp" />
+                <!--尺子-->
+
+                <com.goockr.industrialsprayjava.graphics.InnerRulers.BooheeRuler
+                    android:id="@+id/br_right_head"
+                    android:layout_width="28dp"
+                    android:layout_height="800dp"
+                    app:bigScaleLength="20dp"
+                    app:bigScaleWidth="1.5dp"
+                    app:count="10"
+                    app:currentScale="20"
+                    app:cursorHeight="4dp"
+                    app:cursorWidth="45dp"
+                    app:factor="0.1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:maxScale="200"
+                    app:minScale="0"
+                    app:numberTextSize="12sp"
+                    app:paddingStartAndEnd="10dp"
+                    app:rulerBackGround="@color/translate"
+                    app:rulerStyle="RIGHT_HEAD"
+                    app:scaleColor="@color/black"
+                    app:scaleInterval="6dp"
+                    app:smallScaleLength="10dp"
+                    app:smallScaleWidth="1dp"
+                    app:textMarginHead="5dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </com.goockr.industrialsprayjava.view.Scroll>
+
+
+    </com.goockr.industrialsprayjava.view.Horizon>
+
+    <LinearLayout
+        android:id="@+id/homeLlControl"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#9f9f9f"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btnSendPrint"
+            style="@style/btnStyleWrap"
+            android:text="@string/SendPrint" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btnCreateMsg"
+            style="@style/btnStyleWrap"
+            android:text="@string/CreateMsg" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btnSavaMsg"
+            style="@style/btnStyleWrap"
+            android:text="@string/SaveMsg" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btnInsertText"
+            style="@style/btnStyleWrap"
+
+            android:text="@string/InsertText" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btnInsertclock"
+            style="@style/btnStyleWrap"
+            android:text="@string/InsertClock" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btnInsertNo"
+            style="@style/btnStyleWrap"
+            android:text="@string/InsertNo" />
+
+        <ImageButton
+            android:id="@+id/ibStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/go" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeLlControl2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mainGrayBg"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/ibStart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/away" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btnInsertCode"
+            style="@style/btnStyleWrap"
+            android:text="@string/InsertCode" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btnInsertImg"
+            style="@style/btnStyleWrap"
+            android:text="@string/InsertImg" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btnInsertClass"
+            style="@style/btnStyleWrap"
+            android:text="@string/InsertClazz" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/btnSpildString"
+            style="@style/btnStyleWrap"
+           
+            android:text="@string/InsertPartition" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

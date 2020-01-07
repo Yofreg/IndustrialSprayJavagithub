@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CreateClock"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ClockNumber"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/ClockNoSpinnerClock"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ClockFormat"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/ClockNoSpinnerClock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/ClockContentSpinnerClock"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv8"
+        app:layout_constraintStart_toEndOf="@+id/tv8"
+        app:layout_constraintTop_toTopOf="@+id/tv8"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/DateFormat"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/DateStyleSpinnerClock"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv9"
+        app:layout_constraintStart_toEndOf="@+id/tv9"
+        app:layout_constraintTop_toTopOf="@+id/tv9"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp" />
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/TimeFormat"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/ClockNoSpinnerClock"
+        app:layout_constraintTop_toBottomOf="@+id/tv8" />
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/TimeStyleSpinnerClock"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:enabled="true"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv10"
+        app:layout_constraintStart_toEndOf="@+id/tv10"
+        app:layout_constraintTop_toTopOf="@+id/tv10"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/fontSize"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv9" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/FontSizeSpinnerClock"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toTopOf="@+id/tv3"
+        app:layout_constraintVertical_bias="1.0"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/FontDirection"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toEndOf="@+id/FontSizeSpinnerClock"
+        app:layout_constraintTop_toTopOf="@+id/tv3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/FontAngleSpinnerClock"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toEndOf="@+id/tv5"
+        app:layout_constraintTop_toTopOf="@+id/tv3"
+        app:layout_constraintVertical_bias="1.0"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/timeoffset"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <EditText
+        android:id="@+id/DeviationClock"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_border1"
+        android:inputType="number"
+        android:maxLength="4"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toStartOf="@+id/FontSizeSpinnerClock"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/Typeface"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toEndOf="@+id/FontSizeSpinnerClock"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/FontTypefaceSpinnerClock"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toEndOf="@+id/tv5"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:layout_constraintVertical_bias="0.0"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+
+    <CheckBox
+        android:id="@+id/FontTileClock"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/FontTilt"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/TimeStyleSpinnerClock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/FontBoldClock"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/BoldFont"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/FontTileClock"
+        app:layout_constraintTop_toBottomOf="@+id/FontTileClock" />
+
+    <CheckBox
+        android:id="@+id/FontUnderLineClock"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Underline"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/FontBoldClock"
+        app:layout_constraintTop_toBottomOf="@+id/FontBoldClock" />
+
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnCancelClock"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="@string/Cancel"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv4" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnSureClock"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="@string/determine"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancelClock"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelClock"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelClock"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnDelClock"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="删除"
+        android:textSize="19sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSureClock"
+        app:layout_constraintStart_toEndOf="@+id/btnSureClock"
+        app:layout_constraintTop_toTopOf="@+id/btnSureClock"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>

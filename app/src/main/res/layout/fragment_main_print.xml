@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.printManager.MainPrintFragment">
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/textStyle1"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/WordControl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/PrintMainFontLetterStyle"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/InternalSetting"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <EditText
+        android:id="@+id/StyleSetting"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_border1"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/RepeatPrintSpinner"
+        app:layout_constraintStart_toStartOf="@+id/PrintMainFontLetterStyle"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"></EditText>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/RangeForCol"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/StyleSetting"
+        app:layout_constraintStart_toEndOf="@+id/StyleSetting"
+        app:layout_constraintTop_toTopOf="@+id/StyleSetting" />
+
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/ExternalSetting"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/tv2"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/textStyle1"
+        android:layout_marginStart="16dp"
+        android:text="@string/RangeForDivsion"
+        android:visibility="gone"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/StyleSetting"
+        app:layout_constraintStart_toEndOf="@+id/StyleSetting"
+        app:layout_constraintTop_toTopOf="@+id/StyleSetting" />
+
+
+    <TextView
+        android:id="@+id/tv6"
+        style="@style/textStyle1"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/RepeatedMode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/RepeatPrintSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toEndOf="@+id/tv6"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp" />
+
+
+    <TextView
+        android:id="@+id/tv7"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="@string/RepeatedPrints"
+        app:layout_constraintStart_toStartOf="@+id/tv6"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+    <EditText
+        android:id="@+id/RepeatPrintCount"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv7"
+        app:layout_constraintStart_toEndOf="@+id/tv7"
+        app:layout_constraintTop_toTopOf="@+id/tv7" />
+
+    <TextView
+        android:id="@+id/tv8"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:letterSpacing="0.152"
+        android:text="@string/UseCounter"
+        app:layout_constraintStart_toStartOf="@+id/tv7"
+        app:layout_constraintTop_toBottomOf="@+id/tv7" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/UseCountShowSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv8"
+        app:layout_constraintStart_toEndOf="@+id/tv8"
+        app:layout_constraintTop_toTopOf="@+id/tv8"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp" />
+
+
+    <TextView
+        android:id="@+id/tv9"
+        style="@style/textStyle1"
+        android:layout_marginStart="8dp"
+        android:text="@string/RepeatInterval"
+        app:layout_constraintBottom_toBottomOf="@+id/tv7"
+        app:layout_constraintStart_toEndOf="@+id/RepeatPrintCount"
+        app:layout_constraintTop_toTopOf="@+id/tv7" />
+
+    <EditText
+        android:id="@+id/RepeatPrintInterval"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv9"
+        app:layout_constraintStart_toEndOf="@+id/tv9"
+        app:layout_constraintTop_toTopOf="@+id/tv9" />
+
+    <TextView
+        android:id="@+id/tv10"
+        style="@style/textStyle1"
+        android:layout_marginStart="8dp"
+        android:text="@string/UseEndSignal"
+        app:layout_constraintBottom_toBottomOf="@+id/tv8"
+        app:layout_constraintStart_toEndOf="@+id/UseCountShowSpinner"
+        app:layout_constraintTop_toTopOf="@+id/tv8" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/UsePrintOverSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv10"
+        app:layout_constraintStart_toEndOf="@+id/tv10"
+        app:layout_constraintTop_toTopOf="@+id/tv10"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp" />
+
+    <TextView
+        android:id="@+id/tv11"
+        style="@style/textStyle1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/SerialNumber1"
+        app:layout_constraintStart_toStartOf="@+id/tv8"
+        app:layout_constraintTop_toBottomOf="@+id/tv8" />
+
+    <EditText
+        android:id="@+id/PrintNum1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="8dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tv11"
+        app:layout_constraintStart_toEndOf="@+id/tv11"
+        app:layout_constraintTop_toTopOf="@+id/tv11" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Restoration1"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="8dp"
+        android:text="@string/Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/PrintNum1"
+        app:layout_constraintStart_toEndOf="@+id/PrintNum1"
+        app:layout_constraintTop_toTopOf="@+id/PrintNum1" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Update1"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="8dp"
+        android:text="@string/Updated"
+        app:layout_constraintBottom_toBottomOf="@+id/Restoration1"
+        app:layout_constraintStart_toEndOf="@+id/Restoration1"
+        app:layout_constraintTop_toTopOf="@+id/Restoration1" />
+
+
+    <TextView
+        android:id="@+id/tv12"
+        style="@style/textStyle1"
+        android:layout_marginStart="24dp"
+        android:text="@string/SerialNumber2"
+        app:layout_constraintBottom_toBottomOf="@+id/tv11"
+        app:layout_constraintStart_toEndOf="@+id/Update1"
+        app:layout_constraintTop_toTopOf="@+id/tv11" />
+
+    <EditText
+        android:id="@+id/PrintNum2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="8dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tv12"
+        app:layout_constraintStart_toEndOf="@+id/tv12"
+        app:layout_constraintTop_toTopOf="@+id/tv12" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Restoration2"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="8dp"
+        android:text="@string/Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/PrintNum2"
+        app:layout_constraintStart_toEndOf="@+id/PrintNum2"
+        app:layout_constraintTop_toTopOf="@+id/PrintNum2" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Update2"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="8dp"
+        android:text="@string/Updated"
+        app:layout_constraintBottom_toBottomOf="@+id/Restoration2"
+        app:layout_constraintStart_toEndOf="@+id/Restoration2"
+        app:layout_constraintTop_toTopOf="@+id/Restoration2" />
+
+
+    <TextView
+        android:id="@+id/tv13"
+        style="@style/textStyle1"
+        android:layout_marginTop="24dp"
+        android:text="@string/SerialNumber3"
+        app:layout_constraintStart_toStartOf="@+id/tv11"
+        app:layout_constraintTop_toBottomOf="@+id/tv11" />
+
+    <EditText
+        android:id="@+id/PrintNum3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="8dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tv13"
+        app:layout_constraintStart_toEndOf="@+id/tv13"
+        app:layout_constraintTop_toTopOf="@+id/tv13" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Restoration3"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="8dp"
+        android:text="@string/Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/PrintNum3"
+        app:layout_constraintStart_toEndOf="@+id/PrintNum3"
+        app:layout_constraintTop_toTopOf="@+id/PrintNum3" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Update3"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="8dp"
+        android:text="@string/Updated"
+        app:layout_constraintBottom_toBottomOf="@+id/Restoration3"
+        app:layout_constraintStart_toEndOf="@+id/Restoration3"
+        app:layout_constraintTop_toTopOf="@+id/Restoration3" />
+
+
+    <TextView
+        android:id="@+id/tv14"
+        style="@style/textStyle1"
+        android:layout_marginStart="24dp"
+        android:text="@string/SerialNumber4"
+        app:layout_constraintBottom_toBottomOf="@+id/tv13"
+        app:layout_constraintStart_toEndOf="@+id/Update3"
+        app:layout_constraintTop_toTopOf="@+id/tv13" />
+
+    <EditText
+        android:id="@+id/PrintNum4"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="8dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tv14"
+        app:layout_constraintStart_toEndOf="@+id/tv14"
+        app:layout_constraintTop_toTopOf="@+id/tv14" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Restoration4"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="8dp"
+        android:text="@string/Reset"
+        app:layout_constraintBottom_toBottomOf="@+id/PrintNum4"
+        app:layout_constraintStart_toEndOf="@+id/PrintNum4"
+        app:layout_constraintTop_toTopOf="@+id/PrintNum4" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Update4"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="8dp"
+        android:text="@string/Updated"
+        app:layout_constraintBottom_toBottomOf="@+id/Restoration4"
+        app:layout_constraintStart_toEndOf="@+id/Restoration4"
+        app:layout_constraintTop_toTopOf="@+id/Restoration4" />
+
+    <TextView
+        android:id="@+id/tv_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="定时测试"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/PrintMainFontLetterStyle"
+        app:layout_constraintStart_toEndOf="@+id/PrintMainFontLetterStyle"
+        app:layout_constraintTop_toTopOf="@+id/PrintMainFontLetterStyle"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_cb"
+        app:layout_constraintStart_toEndOf="@+id/tv_cb" app:layout_constraintTop_toTopOf="@+id/tv_cb"
+        android:layout_marginLeft="10dp"/>
+
+
+</android.support.constraint.ConstraintLayout>

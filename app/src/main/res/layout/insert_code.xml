@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/InsertCode"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/BarcodeType"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/CodeTypeSpinner"
+        android:layout_width="120dp"
+        android:layout_marginStart="16dp"
+        app:ms_dropdown_max_height="250dp"
+        android:layout_height="30dp"
+        app:ms_background_color="@color/spinnerback"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="@+id/tv1"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/BarCodeSize"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/CodeTypeSpinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/CodeSizeSpinner"
+        android:layout_width="120dp"
+        android:layout_marginStart="16dp"
+        app:ms_dropdown_max_height="250dp"
+        android:layout_height="30dp"
+        app:ms_background_color="@color/spinnerback"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintStart_toEndOf="@+id/tv2"
+        app:layout_constraintTop_toTopOf="@+id/tv2"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/BarCodeDirection"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/CodeSizeSpinner"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/CodeDirectionSpinner"
+        android:layout_width="120dp"
+        android:layout_marginStart="16dp"
+        app:ms_dropdown_max_height="250dp"
+        android:layout_height="30dp"
+        app:ms_background_color="@color/spinnerback"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/tv8"
+        app:layout_constraintStart_toEndOf="@+id/tv8"
+        app:layout_constraintTop_toTopOf="@+id/tv8"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/ErrorCorrection"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/CorrectionRatioSpinner"
+        android:layout_width="120dp"
+        android:layout_marginStart="16dp"
+        app:ms_dropdown_max_height="250dp"
+        android:layout_height="30dp"
+        app:ms_background_color="@color/spinnerback"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toTopOf="@+id/tv3"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/AntiColor"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toEndOf="@+id/CorrectionRatioSpinner"
+        app:layout_constraintTop_toTopOf="@+id/tv3" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/ReverseSpinner"
+        android:layout_width="120dp"
+        android:layout_marginStart="16dp"
+        app:ms_dropdown_max_height="250dp"
+        android:layout_height="30dp"
+        app:ms_background_color="@color/spinnerback"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toEndOf="@+id/tv5"
+        app:layout_constraintTop_toTopOf="@+id/tv3"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/BarCodeContent"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/CodeContent1Spinner"
+        android:layout_width="100dp"
+        app:ms_dropdown_max_height="250dp"
+        android:layout_height="30dp"
+        app:ms_background_color="@color/spinnerback"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toStartOf="@+id/CorrectionRatioSpinner"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:layout_constraintVertical_bias="0.0"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/CodeContent2Spinner"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toEndOf="@+id/CodeContent1Spinner"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:layout_constraintVertical_bias="0.0"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/CodeContent3Spinner"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@+id/CodeContent2Spinner"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/CodeContent4Spinner"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toEndOf="@+id/CodeContent3Spinner"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:layout_constraintVertical_bias="0.0"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/CodeContent5Spinner"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toEndOf="@+id/CodeContent4Spinner"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:layout_constraintVertical_bias="0.0"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/MachineTextStyle"
+        android:layout_marginTop="6dp"
+        android:text="@string/BarCodeContent"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv6"
+        app:layout_constraintTop_toBottomOf="@+id/tv6" />
+
+    <TextView
+        android:id="@+id/CodeStyle"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv"
+        app:layout_constraintEnd_toEndOf="@+id/CodeDirectionSpinner"
+        app:layout_constraintStart_toEndOf="@+id/tv"
+        app:layout_constraintTop_toTopOf="@+id/tv" />
+
+    <ImageButton
+        android:id="@+id/DelCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:padding="4dp"
+        android:src="@mipmap/del_date"
+        android:visibility="invisible"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="@+id/CodeStyle"
+        app:layout_constraintEnd_toEndOf="@+id/CodeStyle"
+        app:layout_constraintTop_toTopOf="@+id/CodeStyle" />
+
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnCancelCode"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="@string/Cancel"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv4" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnSureCode"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="@string/determine"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancelCode"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelCode"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelCode"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnDelCode"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="删除"
+        android:textSize="19sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSureCode"
+        app:layout_constraintStart_toEndOf="@+id/btnSureCode"
+        app:layout_constraintTop_toTopOf="@+id/btnSureCode"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.machine.CommSettingFragment">
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/textStyle1"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="串口协议"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/textStyle1"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="串口号"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/GorgeSpinner"
+        ttomOf="@+id/tv2"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintStart_toEndOf="@+id/tv2"
+        app:layout_constraintTop_toTopOf="@+id/tv2"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <TextView
+        android:id="@+id/tv3"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="波特率"
+        app:layout_constraintStart_toStartOf="@+id/tv2"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/BaudRateSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toEndOf="@+id/tv3"
+        app:layout_constraintTop_toTopOf="@+id/tv3"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="数据位"
+        app:layout_constraintStart_toStartOf="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/tv3" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/DataBitSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv4"
+        app:layout_constraintStart_toEndOf="@+id/tv4"
+        app:layout_constraintTop_toTopOf="@+id/tv4"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="校验位"
+        app:layout_constraintStart_toStartOf="@+id/tv4"
+        app:layout_constraintTop_toBottomOf="@+id/tv4" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/ParityBitSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv5"
+        app:layout_constraintStart_toEndOf="@+id/tv5"
+        app:layout_constraintTop_toTopOf="@+id/tv5"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <TextView
+        android:id="@+id/tv6"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="停止位"
+        app:layout_constraintStart_toStartOf="@+id/tv5"
+        app:layout_constraintTop_toBottomOf="@+id/tv5" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/StopBitSpinner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv6"
+        app:layout_constraintStart_toEndOf="@+id/tv6"
+        app:layout_constraintTop_toTopOf="@+id/tv6"
+        app:ms_background_color="@color/spinnerback"
+        app:ms_dropdown_max_height="250dp"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+
+    <TextView
+        android:id="@+id/tv7"
+        style="@style/textStyle1"
+        android:layout_marginStart="100dp"
+        android:text="网口协议"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/GorgeSpinner"
+        app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv8"
+        style="@style/textStyle1"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="8dp"
+        android:text="(服务器端)"
+        android:textColor="#ff0000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv7"
+        app:layout_constraintStart_toEndOf="@+id/tv7" />
+
+    <TextView
+        android:id="@+id/tv9"
+        style="@style/textStyle1"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="IP地址"
+        app:layout_constraintStart_toStartOf="@+id/tv7"
+        app:layout_constraintTop_toBottomOf="@+id/tv7" />
+
+    <EditText
+        android:id="@+id/IpAddredd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_border1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv9"
+        app:layout_constraintStart_toStartOf="@+id/SunnetMask"
+        app:layout_constraintTop_toTopOf="@+id/tv9" />
+
+    <TextView
+        android:id="@+id/tv10"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="子网掩码"
+        app:layout_constraintStart_toStartOf="@+id/tv9"
+        app:layout_constraintTop_toBottomOf="@+id/tv9" />
+
+    <EditText
+        android:id="@+id/SunnetMask"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_border1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv10"
+        app:layout_constraintStart_toStartOf="@+id/GateWay"
+        app:layout_constraintTop_toTopOf="@+id/tv10" />
+
+    <TextView
+        android:id="@+id/tv11"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="网关"
+        app:layout_constraintStart_toStartOf="@+id/tv10"
+        app:layout_constraintTop_toBottomOf="@+id/tv10" />
+
+    <EditText
+        android:id="@+id/GateWay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_border1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv11"
+        app:layout_constraintStart_toStartOf="@+id/TcpPort"
+        app:layout_constraintTop_toTopOf="@+id/tv11" />
+
+    <TextView
+        android:id="@+id/tv12"
+        style="@style/textStyle1"
+        android:layout_marginTop="16dp"
+        android:text="TCP端口号"
+        app:layout_constraintStart_toStartOf="@+id/tv11"
+        app:layout_constraintTop_toBottomOf="@+id/tv11" />
+
+    <EditText
+        android:id="@+id/TcpPort"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        app:layout_constraintBottom_toBottomOf="@+id/tv12"
+        app:layout_constraintStart_toEndOf="@+id/tv12"
+        app:layout_constraintTop_toTopOf="@+id/tv12" />
+
+    <TextView
+        android:id="@+id/tvvv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/CommSettingCancel"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="32dp"
+        android:text="返回"
+        app:layout_constraintBottom_toBottomOf="@+id/tvvv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvvv" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/CommSettingSure"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="确定"
+        app:layout_constraintBottom_toBottomOf="@+id/CommSettingCancel"
+        app:layout_constraintStart_toEndOf="@+id/CommSettingCancel"
+        app:layout_constraintTop_toTopOf="@+id/CommSettingCancel"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Conss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fileManager.FontTypefaceFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tv_border1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/FileName"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/FileSize"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/ChangeTime"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.67" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/FontTypefaceListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:divider="#000"
+        android:dividerHeight="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvvv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/tvvv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ImgCancel"
+            style="@style/btnStyleWrap1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="32dp"
+            android:text="@string/Cancel"
+            app:layout_constraintBottom_toBottomOf="@+id/tvvv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvvv" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ImgImport"
+            style="@style/btnStyleWrap1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/ImportPattern"
+            app:layout_constraintBottom_toBottomOf="@+id/FontTypeFaceCancel"
+            app:layout_constraintStart_toEndOf="@+id/FontTypeFaceCancel"
+            app:layout_constraintTop_toTopOf="@+id/FontTypeFaceCancel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ImgExport"
+            style="@style/btnStyleWrap1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/ExportPattern"
+            app:layout_constraintBottom_toBottomOf="@+id/FontTypeFaceImport"
+            app:layout_constraintStart_toEndOf="@+id/FontTypeFaceImport"
+            app:layout_constraintTop_toTopOf="@+id/FontTypeFaceImport" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ImgDel"
+            style="@style/btnStyleWrap1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/DeletePattern"
+            app:layout_constraintBottom_toBottomOf="@+id/FontTypeFaceExport"
+            app:layout_constraintStart_toEndOf="@+id/FontTypeFaceExport"
+            app:layout_constraintTop_toTopOf="@+id/FontTypeFaceExport" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

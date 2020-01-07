@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/PrintFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/homeLlControl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/homeLlControl"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mainGrayBg"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/SaveSetting"
+            style="@style/btnStyleWrap"
+            android:text="@string/SaveSetting" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/Print1"
+            style="@style/btnStyleWrap"
+            android:text="@string/PrintNo1" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/Print2"
+            style="@style/btnStyleWrap"
+            android:text="@string/PrintNo2" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/Print3"
+            style="@style/btnStyleWrap"
+            android:text="@string/PrintNo3" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/Print4"
+            style="@style/btnStyleWrap"
+            android:text="@string/PrintNo4" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/Print5"
+            style="@style/btnStyleWrap"
+            android:text="@string/PrintNo5" />
+
+        <ImageButton
+            android:id="@+id/ibStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/go" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/homeLlControl2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mainGrayBg"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/ibStart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/away" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/Print6"
+            style="@style/btnStyleWrap"
+            android:text="@string/PrintNo6" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/Print7"
+            style="@style/btnStyleWrap"
+            android:text="@string/PrintNo7" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/Print8"
+            style="@style/btnStyleWrap"
+            android:text="@string/PrintNo8" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/InsertImg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Patternname"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/ImgName"
+        android:layout_width="150dp"
+        android:layout_marginStart="48dp"
+        app:ms_dropdown_max_height="250dp"
+        android:layout_height="35dp"
+        app:ms_background_color="@color/spinnerback"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Patternscaling"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/ImgName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/ImgScale"
+        android:layout_width="150dp"
+        android:layout_marginStart="48dp"
+        app:ms_dropdown_max_height="250dp"
+        android:layout_height="35dp"
+        app:ms_background_color="@color/spinnerback"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv5"
+        app:layout_constraintStart_toEndOf="@+id/tv5"
+        app:layout_constraintTop_toTopOf="@+id/tv5" />
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/Patterndirection"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/ImgDireciton"
+        android:layout_width="150dp"
+        app:ms_dropdown_max_height="250dp"
+        android:layout_height="35dp"
+        app:ms_background_color="@color/spinnerback"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintStart_toStartOf="@+id/ImgName"
+        app:layout_constraintTop_toTopOf="@+id/tv3"></com.jaredrummler.materialspinner.MaterialSpinner>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnCancelImg"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="@string/Cancel"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv4" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnSureImg"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="@string/determine"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancelImg"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelImg"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelImg"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnDelImg"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="删除"
+        android:visibility="invisible"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSureImg"
+        app:layout_constraintStart_toEndOf="@+id/btnSureImg"
+        app:layout_constraintTop_toTopOf="@+id/btnSureImg"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/InsertClass"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/starttime"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/TimeStart1"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/ClickSettings"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="@+id/tv1"></TextView>
+
+
+    <TextView
+        android:id="@+id/TimeStart2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/ClickSettings"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart1"
+        app:layout_constraintTop_toTopOf="@+id/tv1"></TextView>
+
+    <TextView
+        android:id="@+id/TimeStart3"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/ClickSettings"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart2"
+        app:layout_constraintTop_toTopOf="@+id/tv1"></TextView>
+
+    <TextView
+        android:id="@+id/TimeStart4"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/ClickSettings"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart3"
+        app:layout_constraintTop_toTopOf="@+id/tv1"></TextView>
+
+    <TextView
+        android:id="@+id/TimeStart5"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/ClickSettings"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart4"
+        app:layout_constraintTop_toTopOf="@+id/tv1"></TextView>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/EndTime"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+
+    <TextView
+        android:id="@+id/TimeEnd1"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/ClickSettings"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintStart_toEndOf="@+id/tv2"
+        app:layout_constraintTop_toTopOf="@+id/tv2"></TextView>
+
+
+    <TextView
+        android:id="@+id/TimeEnd2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/ClickSettings"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart1"
+        app:layout_constraintTop_toTopOf="@+id/tv2"></TextView>
+
+    <TextView
+        android:id="@+id/TimeEnd3"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="@string/ClickSettings"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart2"
+        app:layout_constraintTop_toTopOf="@+id/tv2"></TextView>
+
+    <TextView
+        android:id="@+id/TimeEnd4"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/ClickSettings"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart3"
+        app:layout_constraintTop_toTopOf="@+id/tv2"></TextView>
+
+    <TextView
+        android:id="@+id/TimeEnd5"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/ClickSettings"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart4"
+        app:layout_constraintTop_toTopOf="@+id/tv2"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ClassCode"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+
+    <EditText
+        android:id="@+id/ClassNo1"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="text"
+        android:maxLength="3"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:digits="@string/textAndrNum"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv10"
+        app:layout_constraintStart_toEndOf="@+id/tv10"
+        app:layout_constraintTop_toTopOf="@+id/tv10"/>
+
+
+    <EditText
+        android:id="@+id/ClassNo2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="text"
+        android:maxLength="3"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:digits="@string/textAndrNum"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv10"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart1"
+        app:layout_constraintTop_toTopOf="@+id/tv10"/>
+
+    <EditText
+        android:id="@+id/ClassNo3"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="text"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:digits="@string/textAndrNum"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text=""
+        android:singleLine="true"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv10"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart2"
+        app:layout_constraintTop_toTopOf="@+id/tv10"/>
+
+    <EditText
+        android:id="@+id/ClassNo4"
+        android:singleLine="true"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="text"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:digits="@string/textAndrNum"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv10"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart3"
+        app:layout_constraintTop_toTopOf="@+id/tv10"/>
+
+    <EditText
+        android:id="@+id/ClassNo5"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/tv_border1"
+        android:inputType="text"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:digits="@string/textAndrNum"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv10"
+        app:layout_constraintStart_toEndOf="@+id/TimeStart4"
+        app:layout_constraintTop_toTopOf="@+id/tv10"/>
+
+
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnCancelClass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="@string/Cancel"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv4" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/btnSureClass"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:background="#fff"
+        android:text="@string/determine"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancelClass"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelClass"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelClass"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

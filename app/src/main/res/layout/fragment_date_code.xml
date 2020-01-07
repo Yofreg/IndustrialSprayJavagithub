@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.machine.DateCodeFragment">
+
+    <TextView
+        android:id="@+id/tvvv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/MachineCancel"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="32dp"
+        android:text="@string/Cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/tvvv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvvv" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/MachineSure"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/Save"
+        app:layout_constraintBottom_toBottomOf="@+id/MachineCancel"
+        app:layout_constraintStart_toEndOf="@+id/MachineCancel"
+        app:layout_constraintTop_toTopOf="@+id/MachineCancel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/MachineDel"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/Del"
+        app:layout_constraintBottom_toBottomOf="@+id/MachineCancel"
+        app:layout_constraintStart_toEndOf="@+id/MachineSure"
+        app:layout_constraintTop_toTopOf="@+id/MachineCancel" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/MachineAdd"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:text="@string/Add"
+        app:layout_constraintBottom_toBottomOf="@+id/MachineDel"
+        app:layout_constraintStart_toEndOf="@+id/MachineDel"
+        app:layout_constraintTop_toTopOf="@+id/MachineDel" />
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/MachineTextStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/DaysVariable"
+        app:layout_constraintBottom_toBottomOf="@+id/Day1Bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Day1Bt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Day1Bt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:text="DD"
+        app:layout_constraintBottom_toTopOf="@+id/tvvv"
+        app:layout_constraintStart_toEndOf="@+id/tv1" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Day2Bt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Julian Day"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Day1Bt"
+        app:layout_constraintStart_toEndOf="@+id/Day1Bt"
+        app:layout_constraintTop_toTopOf="@+id/Day1Bt" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/MachineTextStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/WeeklyVariable"
+        app:layout_constraintBottom_toBottomOf="@+id/Week1Bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Week1Bt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Week1Bt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:text="WN"
+        app:layout_constraintBottom_toTopOf="@+id/Day1Bt"
+        app:layout_constraintStart_toEndOf="@+id/tv2" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Week2Bt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Week"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Week1Bt"
+        app:layout_constraintStart_toEndOf="@+id/Week1Bt"
+        app:layout_constraintTop_toTopOf="@+id/Week1Bt" />
+
+    <TextView
+        android:id="@+id/tv3"
+        style="@style/MachineTextStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/MonthVariable"
+        app:layout_constraintBottom_toBottomOf="@+id/Month1Bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Month1Bt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Month1Bt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:text="MM"
+        app:layout_constraintBottom_toTopOf="@+id/Week1Bt"
+        app:layout_constraintStart_toEndOf="@+id/tv3" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Month2Bt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Month"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Month1Bt"
+        app:layout_constraintStart_toEndOf="@+id/Month1Bt"
+        app:layout_constraintTop_toTopOf="@+id/Month1Bt" />
+
+    <TextView
+        android:id="@+id/tv4"
+        style="@style/MachineTextStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/YearVariable"
+        app:layout_constraintBottom_toBottomOf="@+id/Yeat1Bt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Yeat1Bt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Yeat1Bt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:text="YYYY"
+        app:layout_constraintBottom_toTopOf="@+id/Month1Bt"
+        app:layout_constraintStart_toEndOf="@+id/tv4" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Yeat2Bt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAllCaps="false"
+        android:text="yy"
+        app:layout_constraintBottom_toBottomOf="@+id/Yeat1Bt"
+        app:layout_constraintStart_toEndOf="@+id/Yeat1Bt"
+        app:layout_constraintTop_toTopOf="@+id/Yeat1Bt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Yeat3Bt"
+        style="@style/btnStyleWrap1"
+        android:layout_marginStart="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Julian year"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/Yeat2Bt"
+        app:layout_constraintStart_toEndOf="@+id/Yeat2Bt"
+        app:layout_constraintTop_toTopOf="@+id/Yeat2Bt" />
+
+    <TextView
+        android:id="@+id/tv5"
+        style="@style/MachineTextStyle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/Delimiter"
+        app:layout_constraintBottom_toBottomOf="@+id/Yeat1Bt"
+        app:layout_constraintEnd_toStartOf="@+id/Split1"
+        app:layout_constraintTop_toTopOf="@+id/Yeat1Bt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Split1"
+        style="@style/btnStyleWrap1"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="/"
+        app:layout_constraintBottom_toBottomOf="@+id/Yeat2Bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Yeat2Bt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Split2"
+        style="@style/btnStyleWrap1"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/Month1Bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Month1Bt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Split3"
+        style="@style/btnStyleWrap1"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="@+id/Week1Bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Week1Bt" />
+
+    <com.goockr.industrialsprayjava.view.SoundButton
+        android:id="@+id/Split4"
+        style="@style/btnStyleWrap1"
+        android:layout_marginEnd="32dp"
+        android:text="@string/other"
+        app:layout_constraintBottom_toBottomOf="@+id/Day1Bt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Day1Bt" />
+
+
+    <TextView
+        android:id="@+id/tv6"
+        style="@style/MachineTextStyle"
+        android:layout_marginStart="32dp"
+        android:text="@string/DateFormat"
+        app:layout_constraintBottom_toBottomOf="@+id/DateStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/DateStyle" />
+
+    <TextView
+        android:id="@+id/DateStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/tv_border1"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Yeat1Bt"
+        app:layout_constraintEnd_toStartOf="@+id/tv5"
+        app:layout_constraintStart_toEndOf="@+id/tv6" />
+
+    <ImageButton
+        android:id="@+id/DelDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="2dp"
+        android:background="@null"
+        android:padding="7dp"
+        android:src="@mipmap/del_date"
+        android:visibility="invisible"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="@+id/DateStyle"
+        app:layout_constraintEnd_toEndOf="@+id/DateStyle"
+        app:layout_constraintTop_toTopOf="@+id/DateStyle" />
+
+    <ListView
+        android:id="@+id/DateStyleListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:background="@drawable/tv_border1"
+        app:layout_constraintBottom_toTopOf="@+id/DateStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ListView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="NozzleCount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="FontSizes">
+        <item>24</item>
+        <item>32</item>
+        <item>40</item>
+        <item>48</item>
+        <item>64</item>
+        <item>80</item>
+        <item>96</item>
+        <item>112</item>
+        <item>144</item>
+    </string-array>
+    <string-array name="FontAngle">
+        <item>0</item>
+        <item>90</item>
+        <item>180</item>
+        <item>270</item>
+    </string-array>
+    <string-array name="FontSpace">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="FontTypeFace">
+        <item>Arial</item>
+    </string-array>
+
+    <string-array name="ClockNo">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="ClockContent">
+        <item>日期</item>
+        <item>日期+时间</item>
+        <item>时间+日期</item>
+        <item>时间</item>
+    </string-array>
+
+    <string-array name="DateStyle">
+        <item>YYYYMMDD</item>
+        <item>YYMMDD</item>
+        <item>DDMMYYYY</item>
+        <item>DDMMYY</item>
+    </string-array>
+
+    <string-array name="TimeStyle">
+        <item>HH:mm:SS</item>
+        <item>HH:mm</item>
+        <item>HH</item>
+    </string-array>
+
+    <string-array name="CodeType">
+        <item>QR</item>
+        <item>Datamatrix</item>
+        <item>EAN13</item>
+        <item>CODE39</item>
+        <item>CODE128</item>
+    </string-array>
+
+
+    <string-array name="CodeSize">
+        <item>7</item>
+        <item>9</item>
+        <item>12</item>
+        <item>16</item>
+        <item>24</item>
+        <item>32</item>
+    </string-array>
+
+    <string-array name="CodeDirection">
+        <item>0</item>
+        <item>90</item>
+        <item>180</item>
+        <item>270</item>
+    </string-array>
+
+    <string-array name="ImgScale">
+        <item>1x</item>
+        <item>2x</item>
+        <item>3x</item>
+        <item>4x</item>
+    </string-array>
+
+    <string-array name="CorrectionRatio">
+        <item>L</item>
+    </string-array>
+
+    <string-array name="Reverse">
+        <item>无</item>
+        <item>水平翻转</item>
+        <item>垂直翻转</item>
+        <item>同时翻转</item>
+    </string-array>
+
+    <string-array name="CodeProportion">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="CodeContent">
+        <item>文本</item>
+        <item>时钟</item>
+        <item>序号</item>
+        <item>串口</item>
+        <item>班次</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="TextSource">
+        <item>串口</item>
+        <item>USB</item>
+        <item>Ethernet</item>
+    </string-array>
+
+    <string-array name="SoundSwitch">
+        <item>开</item>
+        <item>关</item>
+    </string-array>
+
+    <string-array name="FontLetterStyle">
+        <item>内部</item>
+        <item>外部</item>
+    </string-array>
+
+    <string-array name="TriggerPrint">
+        <item>主机</item>
+        <item>喷头</item>
+    </string-array>
+
+    <string-array name="MuzzleStyle">
+        <item>左列</item>
+        <item>右列</item>
+    </string-array>
+
+    <string-array name="MuzzleInterval">
+        <item>关</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="language">
+        <item>中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="MuzzleRow">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="Gorge">
+        <item>COM1</item>
+        <item>COM2</item>
+        <item>COM3</item>
+        <item>COM4</item>
+        <item>COM5</item>
+        <item>COM6</item>
+        <item>COM7</item>
+    </string-array>
+
+
+    <string-array name="BaudRate">
+        <item>110</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>14400</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>56000</item>
+        <item>57600</item>
+        <item>115200</item>
+    </string-array>
+
+    <string-array name="DataBit" >
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="ParityBit" >
+        <item>None</item>
+        <item>Odd</item>
+        <item>Even</item>
+        <item>MFlag</item>
+        <item>Space</item>
+    </string-array>
+
+    <string-array name="StopBit" >
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+    </string-array>
+
+
+    <string-array name="wxservice">
+        <item>小时数</item>
+        <item>月份数</item>
+    </string-array>
+
+    <string-array name="wxservice2">
+        <item>开</item>
+        <item>关</item>
+        <item>停机 </item>
+    </string-array>
+
+    <string-array name="wxservice3">
+        <item>1200</item>
+        <item>2000</item>
+        <item>3000</item>
+    </string-array>
+
+    <string-array name="wxservice4">
+        <item>6</item>
+        <item>12</item>
+        <item>18</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="selectTB">
+        <item>机器型号</item>
+        <item>制造商图标</item>
+        <item>自定义图标</item>
+    </string-array>
+
+</resources>

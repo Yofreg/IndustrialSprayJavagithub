@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Conss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fileManager.FontTypefaceFragment">
+
+    <ListView
+        android:id="@+id/MsgListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvvv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ListView>
+
+
+    <LinearLayout
+        android:id="@+id/tvvv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/mainGrayBg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ImgCancel"
+            style="@style/btnStyleWrap1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="32dp"
+            android:text="@string/Cancel"
+            app:layout_constraintBottom_toBottomOf="@+id/tvvv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvvv" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ChoseMsg"
+            style="@style/btnStyleWrap1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="选择信息"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/FontTypeFaceCancel"
+            app:layout_constraintStart_toEndOf="@+id/FontTypeFaceCancel"
+            app:layout_constraintTop_toTopOf="@+id/FontTypeFaceCancel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ImgImport"
+            style="@style/btnStyleWrap1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="导入信息"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/FontTypeFaceCancel"
+            app:layout_constraintStart_toEndOf="@+id/FontTypeFaceCancel"
+            app:layout_constraintTop_toTopOf="@+id/FontTypeFaceCancel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ImgExport"
+            style="@style/btnStyleWrap1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="导出信息"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/FontTypeFaceImport"
+            app:layout_constraintStart_toEndOf="@+id/FontTypeFaceImport"
+            app:layout_constraintTop_toTopOf="@+id/FontTypeFaceImport" />
+
+        <com.goockr.industrialsprayjava.view.SoundButton
+            android:id="@+id/ImgDel"
+            style="@style/btnStyleWrap1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="删除信息"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/FontTypeFaceExport"
+            app:layout_constraintStart_toEndOf="@+id/FontTypeFaceExport"
+            app:layout_constraintTop_toTopOf="@+id/FontTypeFaceExport" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
